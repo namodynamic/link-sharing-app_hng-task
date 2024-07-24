@@ -16,11 +16,12 @@ export const metadata: Metadata = {
 
 export default async function Profile() {
   const session = await getServerSession(options);
+  console.log(session);
 
 
   let userData;
   try {
-    userData = await getUserData(session?.user?.id);
+    userData = await getUserData(session?.user?.id ?? "");
   } catch (error) {
     throw new Error("Failed to fetch user data");
   }

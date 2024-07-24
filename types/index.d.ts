@@ -1,3 +1,5 @@
+import "next-auth";
+
 declare type Socials =
   | "github"
   | "frontendMentor"
@@ -22,7 +24,7 @@ declare type UserInfo = {
   displayEmail?: string | null;
 };
 
-declare type UserLink = {
+export type UserLink = {
   _id: string;
   platform: Socials | null;
   url: string;
@@ -30,3 +32,14 @@ declare type UserLink = {
   new?: true;
   updated?: true;
 };
+
+declare module "next-auth" {
+  interface Session {
+    user: {
+      id?: string;
+      name?: string | null;
+      email?: string | null;
+      image?: string | null;
+    };
+  }
+}

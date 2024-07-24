@@ -1,3 +1,5 @@
+import { Socials } from "@/types";
+
 export const SocialLinks: { name: string; id: Socials; color: string }[] = [
   { name: "GitHub", id: "github", color: "hsla(0, 0%, 10%, 1)" },
   {

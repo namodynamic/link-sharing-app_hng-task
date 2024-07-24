@@ -19,6 +19,7 @@ import UserContext from "@/app/context/UserContext";
 import { validateUserProfileUrl } from "@/app/utils";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
+import { UserLink } from "@/types";
 
 const Wrapper = styled.div`
   padding: 1.25rem;

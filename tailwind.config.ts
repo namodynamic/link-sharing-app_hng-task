@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
 const config: Config = {
   mode: "jit",
   content: [
@@ -16,21 +15,21 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "purple": "#633CFF",
+        purple: "#633CFF",
         "purple-hover": "#BEADFF",
         "light-purple": "#EFEBFF",
         "dark-grey": "#333333",
-        "grey": "#737373",
-        "borders": "#D9D9D9",
+        grey: "#737373",
+        borders: "#D9D9D9",
         "light-grey": "#FAFAFA",
-        "red": "#FF3939"
+        red: "#FF3939",
       },
       boxShadow: {
-        "purple-light": "0 0 16px 8px #633CFF30"
-      }
+        "purple-light": "0 0 16px 8px #633CFF30",
+      },
     },
     fontFamily: {
-      instrument: ["var(--font-instrument_sans)"],
+      "instrument-sans": ["Instrument Sans", "sans-serif"],
     },
   },
   plugins: [],
